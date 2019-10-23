@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+ 
+    <h:head>
+        <title>Vendedor</title>
+    </h:head>
+    <h:body>
+
+        <h:form>
+           
+            <h1>REGISTRAR VENDEDOR</h1>
+            <br></br>
+            <br></br>
+            Digite cedula : <h:inputText value="#{controladorVendedor.cedula}"></h:inputText>
+            <br></br> <br></br>
+            Digite nombre : <h:inputText value="#{controladorVendedor.nombre}"></h:inputText>
+            <br></br> <br></br>
+            Digite apellido : <h:inputText value="#{controladorVendedor.apellido}"></h:inputText>
+            <br></br> <br></br>
+            Digite telefono : <h:inputText value="#{controladorVendedor.telefono}"></h:inputText>
+            <br></br> <br></br>
+            Digite correo : <h:inputText value="#{controladorVendedor.correo}"></h:inputText>
+            <br></br><br></br>
+            Digite clave : <h:inputText value="#{controladorVendedor.clave}"></h:inputText>
+            <br></br>
+             <h1 style="color: red">#{controladorVendedor.mensaje}</h1>
+
+            <br></br>
+            <br></br>
+            <h:commandButton value="Insertar" action="#{controladorVendedor.hacerAlgo()}"></h:commandButton>
+            <br></br> <br></br>
+     
+            <br></br>  <br></br>
+
+           
+
+            <h:commandButton  value="Regresar al inicio" action="#{controladorVendedor.regresar()}"></h:commandButton>
+     
+
+        </h:form>
+    </h:body>
+</html>
